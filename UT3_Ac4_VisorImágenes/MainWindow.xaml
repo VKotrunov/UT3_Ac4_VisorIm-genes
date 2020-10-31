@@ -29,32 +29,39 @@
                 BorderBrush="Black"
                 CornerRadius="3"
                 Margin="10">
-        <StackPanel Orientation="Vertical"
-                    Background="LightGreen"
-                    Width="120">
-            <Button Content="Añadir imagen" Margin="5"/>
+
+            <DockPanel LastChildFill="False"
+                       Background="LightGreen"
+                       Width="120">
+                <Button Content="Añadir imagen"
+                        Margin="5"
+                        DockPanel.Dock="Top"/>
                 <Button Content="Eliminar imagen"
-                        Margin="5" />
+                        Margin="5" 
+                        DockPanel.Dock="Top"/>
                 <Button Content="Eliminar todas"
-                        Margin="5" />
-                <Button Content="Rotar"
-                        Margin="5" />
+                        Margin="5" 
+                        DockPanel.Dock="Top"/>
                 <Button Content="Recortar"
-                        Margin="5" />
-        </StackPanel>
+                        Margin="5"
+                        DockPanel.Dock="Bottom" />
+                <Button Content="Rotar"
+                        Margin="5"
+                        DockPanel.Dock="Bottom" />
+            </DockPanel>
         </Border>
         
         <TextBlock Text="Visor de imágenes" DockPanel.Dock="Top" FontSize="40" FontFamily="Rubik" HorizontalAlignment="Center" Margin="10"/>
         <WrapPanel>
-            <Image Source="episodioIV.jpg" Width="130"/>
-            <Image Source="episodioIV.jpg" Width="130" />
-            <Image Source="episodioIV.jpg" Width="130" />
-            <Image Source="episodioIV.jpg" Width="130" />
-            <Image Source="episodioIV.jpg" Width="130" />
+            <Image Source="episodioIV.jpg" Width="135"/>
+            <Image Source="episodioIV.jpg" Width="135" />
+            <Image Source="episodioIV.jpg" Width="135" />
+            <Image Source="episodioIV.jpg" Width="135" />
+            <Image Source="episodioIV.jpg" Width="135" />
             
-            <Image Source="episodioIV.jpg" Width="130" />
-            <Image Source="episodioIV.jpg" Width="130" />
-            <Image Source="episodioIV.jpg" Width="130" />
+            <Image Source="episodioIV.jpg" Width="135" />
+            <Image Source="episodioIV.jpg" Width="135" />
+            <Image Source="episodioIV.jpg" Width="135" />
         </WrapPanel>
     </DockPanel>
 </Window>
