@@ -5,20 +5,22 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:UT3_Ac4_VisorImágenes"
         mc:Ignorable="d"
-        Title="Visor de imágenes" Height="600" Width="700" Icon="photos.ico" MinWidth="700" MinHeight="600">
+        Title="Visor de imágenes" Height="600" Width="700" Icon="photos.ico" 
+        MinWidth="700" MinHeight="600">
     <DockPanel>
-        <DockPanel Background="LightBlue" DockPanel.Dock="Bottom" Height="60" Margin="10">
+        <DockPanel Background="LightBlue" DockPanel.Dock="Bottom" 
+                   Height="60" 
+                   Margin="10"
+                   LastChildFill="False">
             <TextBlock Text="Nº de imágenes: 8" 
                        FontFamily="Rubik" 
                        FontSize="20" 
-                       HorizontalAlignment="Left"
                        VerticalAlignment="Center"
                        DockPanel.Dock="Left"
                        Margin="5"/>
             <TextBlock Text="Diseñado por Vladis"
                        FontFamily="Rubik"
                        FontSize="20"
-                       HorizontalAlignment="Right"
                        VerticalAlignment="Center"
                        DockPanel.Dock="Right"
                        Margin="5"/>
@@ -51,14 +53,18 @@
             </DockPanel>
         </Border>
         
-        <TextBlock Text="Visor de imágenes" DockPanel.Dock="Top" FontSize="40" FontFamily="Rubik" HorizontalAlignment="Center" Margin="10"/>
+        <TextBlock Text="Visor de imágenes" 
+                   DockPanel.Dock="Top" 
+                   FontSize="40" 
+                   FontFamily="Rubik" 
+                   HorizontalAlignment="Center" 
+                   Margin="10"/>
         <WrapPanel>
             <Image Source="episodioIV.jpg" Width="135"/>
             <Image Source="episodioIV.jpg" Width="135" />
             <Image Source="episodioIV.jpg" Width="135" />
             <Image Source="episodioIV.jpg" Width="135" />
             <Image Source="episodioIV.jpg" Width="135" />
-            
             <Image Source="episodioIV.jpg" Width="135" />
             <Image Source="episodioIV.jpg" Width="135" />
             <Image Source="episodioIV.jpg" Width="135" />
