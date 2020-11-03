@@ -7,23 +7,47 @@
         mc:Ignorable="d"
         Title="Visor de imágenes" Height="600" Width="700" Icon="photos.ico" 
         MinWidth="700" MinHeight="600">
+    <Window.Resources>
+        <Style TargetType="Image">
+            <Setter Property="Width"
+                    Value="135" />
+        </Style>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="FontFamily"
+                    Value="Rubik" />
+            <Setter Property="VerticalAlignment"
+                    Value="Center" />
+        </Style>
+
+        <Style TargetType="TextBlock"
+               x:Key="inferior">
+            <Setter Property="FontSize"
+                    Value="20" />
+            <Setter Property="Margin"
+                    Value="5" />
+            <Setter Property="VerticalAlignment"
+                    Value="Center" />
+        </Style>
+
+        <Style TargetType="Button">
+            <Setter Property="Margin"
+                    Value="5" />
+        </Style>
+        
+    </Window.Resources>
+    
     <DockPanel>
         <DockPanel Background="LightBlue" DockPanel.Dock="Bottom" 
                    Height="60" 
                    Margin="10"
                    LastChildFill="False">
-            <TextBlock Text="Nº de imágenes: 8" 
-                       FontFamily="Rubik" 
-                       FontSize="20" 
-                       VerticalAlignment="Center"
-                       DockPanel.Dock="Left"
-                       Margin="5"/>
-            <TextBlock Text="Diseñado por Vladis"
-                       FontFamily="Rubik"
-                       FontSize="20"
-                       VerticalAlignment="Center"
-                       DockPanel.Dock="Right"
-                       Margin="5"/>
+            <TextBlock Style="{StaticResource inferior}"
+                       Text="Nº de imágenes: 8" 
+                       DockPanel.Dock="Left"/>
+            <TextBlock Style="{StaticResource inferior}"
+                       Text="Diseñado por Vladis"
+                       DockPanel.Dock="Right"/>
         </DockPanel>
 
         <Border DockPanel.Dock="Right"
@@ -36,19 +60,14 @@
                        Background="LightGreen"
                        Width="120">
                 <Button Content="Añadir imagen"
-                        Margin="5"
                         DockPanel.Dock="Top"/>
                 <Button Content="Eliminar imagen"
-                        Margin="5" 
                         DockPanel.Dock="Top"/>
                 <Button Content="Eliminar todas"
-                        Margin="5" 
                         DockPanel.Dock="Top"/>
                 <Button Content="Recortar"
-                        Margin="5"
                         DockPanel.Dock="Bottom" />
                 <Button Content="Rotar"
-                        Margin="5"
                         DockPanel.Dock="Bottom" />
             </DockPanel>
         </Border>
@@ -56,18 +75,17 @@
         <TextBlock Text="Visor de imágenes" 
                    DockPanel.Dock="Top" 
                    FontSize="40" 
-                   FontFamily="Rubik" 
                    HorizontalAlignment="Center" 
                    Margin="10"/>
         <WrapPanel>
-            <Image Source="episodioIV.jpg" Width="135"/>
-            <Image Source="episodioIV.jpg" Width="135" />
-            <Image Source="episodioIV.jpg" Width="135" />
-            <Image Source="episodioIV.jpg" Width="135" />
-            <Image Source="episodioIV.jpg" Width="135" />
-            <Image Source="episodioIV.jpg" Width="135" />
-            <Image Source="episodioIV.jpg" Width="135" />
-            <Image Source="episodioIV.jpg" Width="135" />
+            <Image Source="episodioIV.jpg"/>
+            <Image Source="episodioIV.jpg"/>
+            <Image Source="episodioIV.jpg"/>
+            <Image Source="episodioIV.jpg"/>
+            <Image Source="episodioIV.jpg"/>
+            <Image Source="episodioIV.jpg"/>
+            <Image Source="episodioIV.jpg"/>
+            <Image Source="episodioIV.jpg"/>
         </WrapPanel>
     </DockPanel>
 </Window>
